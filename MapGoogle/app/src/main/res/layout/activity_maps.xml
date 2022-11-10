@@ -14,61 +14,19 @@
     tools:context=".MapsActivity"
     />
     <Button
+        android:id="@+id/btn_back"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camera"
-        android:id="@+id/btn_camera"
-
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="100dp"
-        />
-
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:minWidth="32dp"
-        android:text="Send"
-
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="600dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
         />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/iv_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="200dp"
-        />
-
-    <TextView
-        android:textAlignment="center"
-        android:id="@+id/textView"
-        android:layout_marginLeft="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wait" />
-
-
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="400dp"
-        android:background="@color/white"
-
-        >
-
-    </ListView>
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/Row"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp" >
-    </TextView>
-
 </FrameLayout>
