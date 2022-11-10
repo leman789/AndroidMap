@@ -10,17 +10,21 @@
     >
 
     <Button
+        android:id="@+id/btn_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+
         android:text="Camera"
-        android:id="@+id/btn_camera"
-        />
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/btn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="32dp"
+        android:textSize="24dp"
+        android:background="@drawable/rounded_button"
         android:text="Send"
         />
     <Button
@@ -28,6 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="32dp"
+        android:textSize="24dp"
+        android:background="@drawable/rounded_button"
         android:text="Map"
         />
 
