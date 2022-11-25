@@ -4,67 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context=".HomeActivity"
-
-    >
-
-    <Button
-        android:id="@+id/btn_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-
-        android:text="Camera"
-        android:textSize="24dp" />
-
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="32dp"
-        android:textSize="24dp"
-        android:background="@drawable/rounded_button"
-        android:text="Send"
-        />
-    <Button
-        android:id="@+id/btn_map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="32dp"
-        android:textSize="24dp"
-        android:background="@drawable/rounded_button"
-        android:text="Map"
-        />
+    tools:context=".HomeActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        />
+        app:srcCompat="@drawable/images" />
+
 
     <TextView
-        android:textAlignment="center"
-        android:id="@+id/textView"
+
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wait" />
-
-
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="100dp"
+        android:text="Location:"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:text="Wait"
+        android:textAlignment="center" />
 
-        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    </ListView>
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="260dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </ListView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="58dp"
+            android:layout_height="201dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/scrolling" />
+
+    </LinearLayout>
+
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/Row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp" >
-    </TextView>
+        android:textSize="15sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:minWidth="32dp"
+            android:text="Map"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:minWidth="32dp"
+            android:layout_marginRight="25dp"
+            android:text="Send"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="25dp"
+            android:text="Camera"
+            android:textSize="12dp" />
+    </LinearLayout>
 </LinearLayout>

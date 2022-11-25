@@ -9,7 +9,10 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -77,6 +80,13 @@ public class HomeActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                for (int i = 0; i < list.getChildCount(); i++) {
+                    if (position == i) {
+                        list.getChildAt(0).setBackground(ContextCompat.getDrawable(HomeActivity.this,R.drawable.rounded_corner2));
+                    } else {
+                        list.getChildAt(0).setBackground(ContextCompat.getDrawable(HomeActivity.this,R.drawable.rounded_corner));
+                    }
+                }
                 sendTypeOfProblem = cars[position];
             }
         });
